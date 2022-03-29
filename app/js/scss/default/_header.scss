@@ -22,9 +22,61 @@
   z-index: -5;
 }
 
+.header-logo {
+  height: 5rem;
+}
+
 .navigation-line {
   z-index: 5;
   display: flex;
+}
+.list-title {
+  cursor: pointer;
+}
+
+#product,
+#company,
+#connect {
+  position: relative;
+}
+
+.product_dropdown,
+.company_dropdown,
+.connect_dropdown {
+  position: absolute;
+  top: 200%;
+  left: 0;
+  background-color: $White;
+  // transform: translateY(100%) translateY(2rem);
+  color: $VeryDarkGrayishBlue;
+  padding: 2rem;
+  border-radius: 5px;
+  @include flex-center(2rem);
+  flex-direction: column;
+  align-items: flex-start;
+  transition: all 0.8s ease-in;
+  transform: scaleY(0);
+  transform-origin: top;
+
+  li {
+    opacity: 0;
+    transition: opacity 2s;
+  }
+}
+
+.dropdown_visibility {
+  transform: scaleY(1);
+  transform-origin: top;
+  transition: all 0.8s ease-in;
+
+  li {
+    transition: opacity 2s;
+    opacity: 1;
+  }
+}
+
+.hamburger-icon {
+  display: none;
 }
 
 nav {
@@ -62,6 +114,7 @@ button {
   padding: 1.2rem 3.5rem;
   border-radius: 9999px;
   color: $LightRed;
+  cursor: pointer;
 }
 
 .hero-content {
@@ -96,5 +149,6 @@ button {
     padding: 1.2rem 3.5rem;
     border-radius: 9999px;
     color: $White;
+    cursor: pointer;
   }
 }
