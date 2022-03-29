@@ -1,0 +1,14 @@
+@mixin flex-center($gap) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $gap;
+}
+
+@mixin button-reset {
+  background-color: transparent;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}

@@ -20,7 +20,7 @@ html {
   height: 50rem;
   background-repeat: no-repeat;
   background-size: cover;
-  background: linear-gradient(to left, #ff3d54, #ff8f70);
+  background: linear-gradient(to left, #ff3d54 10%, #ff8f70);
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -60,14 +60,14 @@ nav .chevron_down {
 }
 nav .navigation-section {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   gap: 2rem;
 }
 nav .login-section {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   gap: 2rem;
 }
 
@@ -87,14 +87,15 @@ button {
 }
 
 .hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0rem;
+  flex-direction: column;
   font-family: "Overpass", sans-serif;
   color: white;
   z-index: 10;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
+  height: 80%;
 }
 .hero-content h1 {
   font-size: 5rem;
@@ -108,8 +109,8 @@ button {
 }
 .hero-content .hero-btn-section {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   gap: 2rem;
   font-size: 1.8rem;
   font-family: "Ubuntu", sans-serif;
@@ -120,4 +121,55 @@ button {
   padding: 1.2rem 3.5rem;
   border-radius: 9999px;
   color: white;
+}
+
+@media screen and (max-width: 425px) {
+  .header {
+    height: 60rem;
+  }
+
+  .header-image {
+    top: -50%;
+    right: -150%;
+    height: 150rem;
+    z-index: -5;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: -100%;
+  }
+
+  .cta-btn {
+    background-color: white;
+    padding: 1.4rem 2rem;
+    border-radius: 9999px;
+    color: #ff525d;
+  }
+
+  .hero-content {
+    height: 90%;
+  }
+  .hero-content h1 {
+    font-size: 3.2rem;
+    text-align: center;
+  }
+  .hero-content p {
+    text-align: center;
+  }
+  .hero-content .hero-btn-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 1.2rem;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+  }
+  .hero-content .options-btn {
+    padding: 1.4rem 2rem;
+  }
 }/*# sourceMappingURL=style.css.map */

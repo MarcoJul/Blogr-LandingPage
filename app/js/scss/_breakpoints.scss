@@ -1,0 +1,5 @@
+@import "default/base";
+
+@media screen and (max-width: 425px) {
+  @import "sm-down/base";
+}

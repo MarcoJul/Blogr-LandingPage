@@ -1,0 +1,46 @@
+.header {
+  height: 60rem;
+}
+
+.header-image {
+  top: -50%;
+  right: -150%;
+  height: 150rem;
+  z-index: -5;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  right: -100%;
+}
+
+.cta-btn {
+  background-color: $White;
+  padding: 1.4rem 2rem;
+  border-radius: 9999px;
+  color: $LightRed;
+}
+
+.hero-content {
+  height: 90%;
+  h1 {
+    font-size: 3.2rem;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+
+  .hero-btn-section {
+    @include flex-center(2rem);
+    font-size: 1.2rem;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+  }
+  .options-btn {
+    padding: 1.4rem 2rem;
+  }
+}
