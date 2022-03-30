@@ -116,8 +116,17 @@ nav {
   li {
     list-style-type: none;
   }
-  .chevron_down {
+  .chevron {
     margin-left: 1rem;
+    stroke: $White;
+  }
+  .chevron_desktop,
+  .chevron_mobile {
+    transition: all 0.4s;
+  }
+  .chevron_rotation {
+    transform: rotate(180deg);
+    transition: all 0.4s;
   }
   .navigation-section {
     @include flex-center(2rem);
@@ -126,6 +135,10 @@ nav {
   .login-section {
     @include flex-center(2rem);
   }
+}
+
+.chevron_mobile {
+  display: none;
 }
 
 button {
