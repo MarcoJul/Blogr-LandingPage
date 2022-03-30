@@ -47,6 +47,22 @@ html {
 
 .list-title {
   cursor: pointer;
+  display: inline-block;
+  transition: all 0.3s;
+}
+.list-title:after {
+  content: "";
+  position: absolute;
+  bottom: -0.3rem;
+  left: 0;
+  background-color: white;
+  width: 80%;
+  height: 1px;
+  transition: all 0.5s;
+  opacity: 0;
+}
+.list-title:hover::after {
+  opacity: 1;
 }
 
 #product,
@@ -71,24 +87,30 @@ html {
   gap: 2rem;
   flex-direction: column;
   align-items: flex-start;
-  transition: all 0.8s ease-in;
-  transform: scaleY(0);
+  transition: all 0.4s ease-in;
+  opacity: 0;
   transform-origin: top;
+  width: 15rem;
 }
 .product_dropdown li,
 .company_dropdown li,
 .connect_dropdown li {
   opacity: 0;
-  transition: opacity 2s;
+  transition: all 1s;
+  cursor: pointer;
+}
+.product_dropdown li:hover,
+.company_dropdown li:hover,
+.connect_dropdown li:hover {
+  font-weight: 600;
 }
 
 .dropdown_visibility {
-  transform: scaleY(1);
-  transform-origin: top;
-  transition: all 0.8s ease-in;
+  opacity: 1;
+  transition: all 0.4s ease-in;
 }
 .dropdown_visibility li {
-  transition: opacity 2s;
+  transition: all 0.4s;
   opacity: 1;
 }
 
@@ -139,7 +161,13 @@ button {
   padding: 1.2rem 3.5rem;
   border-radius: 9999px;
   color: #ff525d;
+  transition: all 0.5s;
   cursor: pointer;
+}
+.cta-btn:hover {
+  background-color: #ff7a85;
+  color: white;
+  transition: all 0.5s;
 }
 
 .hero-content {
@@ -177,7 +205,13 @@ button {
   padding: 1.2rem 3.5rem;
   border-radius: 9999px;
   color: white;
+  transition: all 0.5s;
   cursor: pointer;
+}
+.hero-content .options-btn:hover {
+  background-color: white;
+  color: #ff7a85;
+  transition: all 0.5s;
 }
 
 @media screen and (max-width: 768px) {

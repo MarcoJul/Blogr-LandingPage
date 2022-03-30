@@ -32,6 +32,24 @@
 }
 .list-title {
   cursor: pointer;
+  display: inline-block;
+  transition: all 0.3s;
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -0.3rem;
+    left: 0;
+    background-color: $White;
+    width: 80%;
+    height: 1px;
+    transition: all 0.5s;
+    opacity: 0;
+  }
+
+  &:hover::after {
+    opacity: 1;
+  }
 }
 
 #product,
@@ -54,23 +72,28 @@
   @include flex-center(2rem);
   flex-direction: column;
   align-items: flex-start;
-  transition: all 0.8s ease-in;
-  transform: scaleY(0);
+  transition: all 0.4s ease-in;
+  opacity: 0;
   transform-origin: top;
+  width: 15rem;
 
   li {
     opacity: 0;
-    transition: opacity 2s;
+    transition: all 1s;
+    cursor: pointer;
+
+    &:hover {
+      font-weight: 600;
+    }
   }
 }
 
 .dropdown_visibility {
-  transform: scaleY(1);
-  transform-origin: top;
-  transition: all 0.8s ease-in;
+  opacity: 1;
+  transition: all 0.4s ease-in;
 
   li {
-    transition: opacity 2s;
+    transition: all 0.4s;
     opacity: 1;
   }
 }
@@ -114,7 +137,14 @@ button {
   padding: 1.2rem 3.5rem;
   border-radius: 9999px;
   color: $LightRed;
+  transition: all 0.5s;
   cursor: pointer;
+
+  &:hover {
+    background-color: $VeryLightRed;
+    color: $White;
+    transition: all 0.5s;
+  }
 }
 
 .hero-content {
@@ -149,6 +179,13 @@ button {
     padding: 1.2rem 3.5rem;
     border-radius: 9999px;
     color: $White;
+    transition: all 0.5s;
     cursor: pointer;
+
+    &:hover {
+      background-color: $White;
+      color: $VeryLightRed;
+      transition: all 0.5s;
+    }
   }
 }
