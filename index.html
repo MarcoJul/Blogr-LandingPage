@@ -30,31 +30,103 @@
         color: hsl(228, 45%, 44%);
       }
     </style>
+    <script defer src="./app/js/app.js"></script>
   </head>
   <body>
+    <header class="header">
+      <div class="container">
+        <div class="navigation-line">
+          <img src="./images/logo.svg" alt="Blogr logo" class="header-logo" />
+          <div class="hamburger-icon">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+          <nav>
+            <ul class="navigation-section">
+              <li id="product">
+                <div class="list-title">
+                  <span class="product_btn">Product</span
+                  ><span class="chevron"
+                    ><img
+                      src="./images/icon-arrow-light.svg"
+                      class="chevron_desktop chevron_product" />
+                    <img
+                      src="./images/icon-arrow-dark.svg"
+                      class="chevron_mobile chevron_product"
+                  /></span>
+                </div>
+                <ul class="product_dropdown">
+                  <li>Overview</li>
+                  <li>Pricing</li>
+                  <li>MarketPlace</li>
+                  <li>Features</li>
+                  <li>Integrations</li>
+                </ul>
+              </li>
+              <li id="company">
+                <div class="list-title">
+                  <span class="company_btn">Company</span
+                  ><span class="chevron"
+                    ><img
+                      src="./images/icon-arrow-light.svg"
+                      class="chevron_desktop chevron_company" />
+                    <img
+                      src="./images/icon-arrow-dark.svg"
+                      class="chevron_mobile chevron_company"
+                  /></span>
+                </div>
+                <ul class="company_dropdown">
+                  <li>About</li>
+                  <li>Team</li>
+                  <li>Blog</li>
+                  <li>Careers</li>
+                </ul>
+              </li>
+              <li id="connect">
+                <div class="list-title">
+                  <span class="connect_btn">Connect</span
+                  ><span class="chevron"
+                    ><img
+                      src="./images/icon-arrow-light.svg"
+                      class="chevron_desktop chevron_connect" />
+                    <img
+                      src="./images/icon-arrow-dark.svg"
+                      class="chevron_mobile chevron_connect"
+                  /></span>
+                </div>
+                <ul class="connect_dropdown">
+                  <li>Contact</li>
+                  <li>Newsletter</li>
+                  <li>Linkedin</li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="login-section">
+              <li>Login</li>
+              <button class="cta-btn">Sign Up</button>
+            </ul>
+          </nav>
+        </div>
+        <div class="background-image">
+          <img
+            src="./images/bg-pattern-intro-desktop.svg"
+            alt="hero-image"
+            class="header-image"
+          />
+        </div>
+        <div class="hero-content">
+          <h1>A modern publishing platform</h1>
+          <p>Grow your audience and build your online brand</p>
+          <div class="hero-btn-section">
+            <button class="cta-btn">Start for Free</button>
+            <button class="options-btn">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </header>
     <!-- Product
 
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-
-  Contact
-  Newsletter
-  LinkedIn
-  
-  Login
-  Sign Up
 
   A modern publishing platform
   Grow your audience and build your online brand
@@ -112,7 +184,8 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by
+      <a target="_blank" href="https://github.com/MarcoJul">Marco</a>.
     </div>
   </body>
 </html>
