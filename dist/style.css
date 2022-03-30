@@ -269,6 +269,24 @@ button {
   margin-left: -20rem;
 }
 
+.infrastructure {
+  background-color: #2c2d3f;
+  height: 30rem;
+}
+
+.features {
+  padding-top: 8rem;
+  font-family: "Overpass", sans-serif;
+  color: #4b5862;
+  overflow: hidden;
+}
+
+.image-features img {
+  height: 75rem;
+  transform: translateX(-45rem);
+  margin-right: -45rem;
+}
+
 @media screen and (max-width: 768px) {
   .header {
     height: 60rem;

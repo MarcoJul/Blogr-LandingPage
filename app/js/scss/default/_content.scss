@@ -42,3 +42,23 @@
     margin-left: -20rem;
   }
 }
+
+.infrastructure {
+  background-color: $VeryDarkGrayBlue;
+  height: 30rem;
+}
+
+.features {
+  padding-top: 8rem;
+  font-family: "Overpass", sans-serif;
+  color: $VeryDarkGrayishBlue;
+  overflow: hidden;
+}
+
+.image-features {
+  img {
+    height: 75rem;
+    transform: translateX(-45rem);
+    margin-right: -45rem;
+  }
+}
