@@ -469,7 +469,7 @@ button {
 .company_dropdown,
 .connect_dropdown {
     position: initial;
-    background-color: #c8c8cb;
+    background-color: #e7e7e7;
     max-height: 0;
     display: none;
     margin-top: 2rem;
