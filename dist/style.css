@@ -348,6 +348,40 @@ button {
   margin-right: -45rem;
 }
 
+footer {
+  background-color: #25252d;
+  font-family: "Ubuntu", sans-serif;
+  margin-top: 5rem;
+  border-radius: 0 80px 0 0;
+}
+
+.footer-logo {
+  width: 8rem;
+}
+
+.flex-footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20%;
+  color: #c8c8cb;
+  padding-top: 4rem;
+  margin-bottom: 4rem;
+}
+.flex-footer ul {
+  list-style-type: none;
+}
+.flex-footer .title-list {
+  font-weight: 700;
+  margin-bottom: 4rem;
+  color: white;
+}
+.flex-footer li {
+  font-size: 1.4rem;
+  margin-bottom: 1.4rem;
+  font-weight: 400;
+}
+
 @media screen and (max-width: 768px) {
   .header {
     height: 60rem;
@@ -624,5 +658,19 @@ button {
     height: 35rem;
     transform: translateX(0);
     margin-right: 0;
+  }
+
+  .footer-logo {
+    margin-bottom: 8rem;
+  }
+
+  .flex-footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .flex-footer ul {
+    text-align: center;
+    margin-bottom: 5rem;
   }
 }/*# sourceMappingURL=style.css.map */
