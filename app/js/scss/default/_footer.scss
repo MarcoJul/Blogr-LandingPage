@@ -2,7 +2,7 @@ footer {
   background-color: $VeryDarkBlackBlue;
   // height: 30rem;
   font-family: "Ubuntu", sans-serif;
-
+  margin-top: 5rem;
   border-radius: 0 80px 0 0;
 }
 
@@ -25,6 +25,7 @@ footer {
   .title-list {
     font-weight: 700;
     margin-bottom: 4rem;
+    color: $White;
   }
 
   li {

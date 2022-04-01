@@ -351,6 +351,7 @@ button {
 footer {
   background-color: #25252d;
   font-family: "Ubuntu", sans-serif;
+  margin-top: 5rem;
   border-radius: 0 80px 0 0;
 }
 
@@ -373,6 +374,7 @@ footer {
 .flex-footer .title-list {
   font-weight: 700;
   margin-bottom: 4rem;
+  color: white;
 }
 .flex-footer li {
   font-size: 1.4rem;
@@ -656,5 +658,19 @@ footer {
     height: 35rem;
     transform: translateX(0);
     margin-right: 0;
+  }
+
+  .footer-logo {
+    margin-bottom: 8rem;
+  }
+
+  .flex-footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .flex-footer ul {
+    text-align: center;
+    margin-bottom: 5rem;
   }
 }/*# sourceMappingURL=style.css.map */
