@@ -5,8 +5,10 @@
 const companyNav = document.querySelector(".nav-company");
 const hamburger = document.querySelector(".hamburger-icon");
 const mobileNav = document.querySelector("nav");
+const body = document.querySelector("body");
 
 hamburger.addEventListener("click", () => {
+  body.classList.toggle("fix");
   hamburger.classList.toggle("click");
   mobileNav.classList.toggle("navTranslate");
 });
