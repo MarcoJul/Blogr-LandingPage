@@ -227,6 +227,12 @@ button {
   transition: all 0.5s;
 }
 
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .design {
   padding-top: 8rem;
   font-family: "Overpass", sans-serif;
@@ -250,12 +256,6 @@ button {
   margin-bottom: -5rem;
 }
 
-.flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .text .title-section {
   font-size: 2.5rem;
   margin-bottom: 2rem;
@@ -266,6 +266,9 @@ button {
   margin-bottom: 3rem;
 }
 
+.image-design .design-img-mobile {
+  display: none;
+}
 .image-design img {
   height: 75rem;
   transform: translateX(30rem);
@@ -336,6 +339,9 @@ button {
   overflow: hidden;
 }
 
+.image-features .feature-img-mobile {
+  display: none;
+}
 .image-features img {
   height: 75rem;
   transform: translateX(-45rem);
@@ -506,5 +512,117 @@ button {
   }
   .hero-content .options-btn {
     padding: 1.4rem 2rem;
+  }
+
+  .design {
+    margin-bottom: 20rem;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .title-content {
+    font-size: 2.4rem;
+    margin-bottom: 5rem;
+  }
+
+  .content-container {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    order: 2;
+  }
+  .text .title-section {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .text p {
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  .image-design {
+    order: 1;
+  }
+  .image-design .design-img-desktop {
+    display: none;
+  }
+  .image-design .design-img-mobile {
+    display: block;
+  }
+  .image-design img {
+    height: 25rem;
+    transform: translateX(0);
+    margin: 0;
+    margin-bottom: 5rem;
+  }
+
+  .infrastructure {
+    height: 70rem;
+  }
+
+  .image-infrastructure {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .image-infrastructure img {
+    left: -40%;
+    bottom: 40%;
+    position: absolute;
+    width: 60rem;
+    z-index: 1;
+  }
+
+  .phone-images {
+    z-index: 5;
+    width: 37rem;
+    margin-left: 0rem;
+  }
+
+  .infrastructure-positioning {
+    justify-content: center;
+    gap: 2rem;
+    transform: translateY(-20%);
+    z-index: 5;
+  }
+
+  .infrastructure_text h3 {
+    z-index: 20;
+    font-size: 4rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  .infrastructure_text p {
+    z-index: 20;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 3rem;
+    text-align: center;
+  }
+
+  .image-features .feature-img-desktop {
+    display: none;
+  }
+  .image-features .feature-img-mobile {
+    display: block;
+  }
+  .image-features img {
+    height: 35rem;
+    transform: translateX(0);
+    margin-right: 0;
   }
 }/*# sourceMappingURL=style.css.map */
