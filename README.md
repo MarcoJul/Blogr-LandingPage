@@ -10,7 +10,6 @@ This is a solution to the [Blogr landing page challenge on Frontend Mentor](http
 - [My process](#my-process)
   - [Built with](#built-with)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -39,6 +38,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@MarcoJul](https://www.frontendmentor.io/profile/MarcoJul)
+- Twitter - [@Jullabies](https://twitter.com/JullabieS)
