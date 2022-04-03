@@ -33,6 +33,9 @@ html {
   padding-top: 5rem;
   border-radius: 0 0 0 80px;
 }
+.header.sticky-header {
+  margin-top: 16rem;
+}
 
 .header-image {
   position: absolute;
@@ -97,6 +100,7 @@ html {
   opacity: 0;
   transform-origin: top;
   width: 15rem;
+  box-shadow: 0 0.4rem 5rem rgba(0, 0, 0, 0.3);
 }
 .product_dropdown li,
 .company_dropdown li,
@@ -233,6 +237,17 @@ button {
   transition: all 0.5s;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  padding: 3rem 10% 3rem;
+  box-shadow: 0 0.4rem 5rem rgba(0, 0, 0, 0.3);
+  background: linear-gradient(to left, #ff3d54 10%, #ff8f70);
+}
+
 .flex {
   display: flex;
   justify-content: space-between;
@@ -312,11 +327,9 @@ button {
   bottom: -50%;
   position: absolute;
   width: 100rem;
-  z-index: 5;
 }
 
 .phone-images {
-  z-index: 5;
   width: 40rem;
   margin-left: -3rem;
 }
@@ -405,6 +418,11 @@ footer {
     justify-content: space-between;
     align-items: center;
     height: 5rem;
+  }
+  .navigation-line.sticky {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 
   .hamburger-icon {
@@ -496,6 +514,7 @@ footer {
   .navTranslate {
     transform: translateX(0);
     transition: all 0.8s;
+    box-shadow: 0 0.4rem 5rem rgba(0, 0, 0, 0.3);
   }
 
   #product,
@@ -513,6 +532,7 @@ footer {
     max-height: 0;
     display: none;
     margin-top: 2rem;
+    box-shadow: none;
   }
 
   .dropdown_visibility {
@@ -624,11 +644,9 @@ footer {
     bottom: 40%;
     position: absolute;
     width: 60rem;
-    z-index: 1;
   }
 
   .phone-images {
-    z-index: 5;
     width: 37rem;
     margin-left: 0rem;
   }
@@ -637,7 +655,6 @@ footer {
     justify-content: center;
     gap: 2rem;
     transform: translateY(-20%);
-    z-index: 5;
   }
 
   .infrastructure_text h3 {

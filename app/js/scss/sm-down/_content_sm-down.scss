@@ -74,12 +74,10 @@
     bottom: 40%;
     position: absolute;
     width: 60rem;
-    z-index: 1;
   }
 }
 
 .phone-images {
-  z-index: 5;
   width: 37rem;
   margin-left: 0rem;
 }
@@ -88,7 +86,6 @@
   justify-content: center;
   gap: 2rem;
   transform: translateY(-20%);
-  z-index: 5;
 }
 
 .infrastructure_text {

@@ -1,5 +1,57 @@
 "use strict";
 
+/// STICKY NAVIGATION
+
+// const navigationEl = document.querySelector(".navigation-line");
+
+const navigation = document.querySelector(".navigation-line");
+
+const header = document.querySelector(".header");
+const section1 = document.querySelector(".design");
+
+const obsCallback = (entries, observer) => {
+  const [entry] = entries;
+  console.log(entry);
+
+  if (!entry.isIntersecting) {
+    navigation.classList.add("sticky");
+  } else {
+    navigation.classList.remove("sticky");
+  }
+
+  // entries.forEach((entry) => {
+  //   navigation.classList.toggle("sticky");
+  //   // header.classList.toggle("sticky-header");
+  //   console.log(entry.isIntersecting);
+  // });
+};
+
+const obsOptions = {
+  root: null,
+  threshold: 0.6,
+  rootMargin: "50px",
+};
+
+const headerObserver = new IntersectionObserver(obsCallback, obsOptions);
+
+headerObserver.observe(header);
+
+// const obs = new IntersectionObserver(
+//   function (entries) {
+//     const ent = entries[0];
+//     console.log(ent);
+//     if (!ent.isIntersecting) document.body.classList.add("sticky");
+//     if (ent.isIntersecting) document.body.classList.remove("sticky");
+//   },
+//   {
+//     root: null,
+//     threshold: 0,
+//     rootMargin: "-80px",
+//   }
+// );
+
+// obs.observe(navigationEl);
+
 //// HAMBURGER MENU
 
 const companyNav = document.querySelector(".nav-company");

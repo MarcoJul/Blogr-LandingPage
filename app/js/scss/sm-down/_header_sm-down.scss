@@ -14,6 +14,10 @@
   justify-content: space-between;
   align-items: center;
   height: 5rem;
+
+  &.sticky {
+    height: fit-content;
+  }
 }
 
 .hamburger-icon {
@@ -111,6 +115,7 @@ nav {
 .navTranslate {
   transform: translateX(0);
   transition: all 0.8s;
+  @include box-shadow;
 }
 
 #product,
@@ -128,6 +133,7 @@ nav {
   max-height: 0;
   display: none;
   margin-top: 2rem;
+  box-shadow: none;
 }
 
 .dropdown_visibility {

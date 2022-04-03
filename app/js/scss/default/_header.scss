@@ -12,6 +12,10 @@
   z-index: 1;
   padding-top: 5rem;
   border-radius: 0 0 0 80px;
+
+  &.sticky-header {
+    margin-top: 16rem;
+  }
 }
 
 .header-image {
@@ -76,6 +80,7 @@
   opacity: 0;
   transform-origin: top;
   width: 15rem;
+  @include box-shadow;
 
   li {
     opacity: 0;
@@ -201,4 +206,21 @@ button {
       transition: all 0.5s;
     }
   }
+}
+
+/// STICKY CLASSES
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  padding: 3rem 10% 3rem;
+  @include box-shadow;
+  background: linear-gradient(
+    to left,
+    $LightRedGradient 10%,
+    $VeryLightRedGradient
+  );
 }
