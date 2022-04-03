@@ -2,8 +2,6 @@
 
 /// STICKY NAVIGATION
 
-// const navigationEl = document.querySelector(".navigation-line");
-
 const navigation = document.querySelector(".navigation-line");
 
 const header = document.querySelector(".header");
@@ -18,12 +16,6 @@ const obsCallback = (entries, observer) => {
   } else {
     navigation.classList.remove("sticky");
   }
-
-  // entries.forEach((entry) => {
-  //   navigation.classList.toggle("sticky");
-  //   // header.classList.toggle("sticky-header");
-  //   console.log(entry.isIntersecting);
-  // });
 };
 
 const obsOptions = {
@@ -35,22 +27,6 @@ const obsOptions = {
 const headerObserver = new IntersectionObserver(obsCallback, obsOptions);
 
 headerObserver.observe(header);
-
-// const obs = new IntersectionObserver(
-//   function (entries) {
-//     const ent = entries[0];
-//     console.log(ent);
-//     if (!ent.isIntersecting) document.body.classList.add("sticky");
-//     if (ent.isIntersecting) document.body.classList.remove("sticky");
-//   },
-//   {
-//     root: null,
-//     threshold: 0,
-//     rootMargin: "-80px",
-//   }
-// );
-
-// obs.observe(navigationEl);
 
 //// HAMBURGER MENU
 
@@ -158,31 +134,3 @@ window.addEventListener("click", (e) => {
     resetChevron(connectChv);
   }
 });
-
-// const toggleVisibility = (dropdown) => {
-//   dropdown.classList.toggle("dropdown_visibility");
-// };
-
-// window.addEventListener("click", (e) => {
-//   if (!e.target.parentElement) return;
-//   console.log(e.target.classList.value);
-//   console.log(e.target.parentElement.classList.value.includes("company_btn"));
-//   if (
-//     e.target.parentElement.classList.value.includes("product_btn") ||
-//     e.target.classList.value.includes("product_btn")
-//   ) {
-//     removeVisibility(companyDrop);
-//     removeVisibility(connectDrop);
-//     toggleVisibility(productDrop);
-//   } else if (e.target.parentElement.classList.value.includes("company_btn")) {
-//     removeVisibility(productDrop);
-//     removeVisibility(connectDrop);
-//     toggleVisibility(companyDrop);
-//   } else if (e.target.parentElement.classList.value.includes("connect_btn")) {
-//     removeVisibility(productDrop);
-//     removeVisibility(companyDrop);
-//     toggleVisibility(connectDrop);
-//   } else {
-//     removeVisibility();
-//   }
-// });
