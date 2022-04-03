@@ -26,7 +26,7 @@ html {
   height: 50rem;
   background-repeat: no-repeat;
   background-size: cover;
-  background: linear-gradient(to left, #ff3d54 10%, #ff8f70);
+  background: linear-gradient(to left, hsl(353deg, 100%, 62%) 10%, hsl(13deg, 100%, 72%));
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -64,7 +64,7 @@ html {
   position: absolute;
   bottom: -0.3rem;
   left: 0;
-  background-color: white;
+  background-color: hsl(0deg, 0%, 100%);
   width: 80%;
   height: 1px;
   transition: all 0.5s;
@@ -86,8 +86,8 @@ html {
   position: absolute;
   top: 200%;
   left: 0;
-  background-color: white;
-  color: #4b5862;
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(207deg, 13%, 34%);
   padding: 2rem;
   border-radius: 5px;
   display: flex;
@@ -135,7 +135,7 @@ nav {
   width: 100%;
   z-index: 5;
   font-family: "Ubuntu", sans-serif;
-  color: white;
+  color: hsl(0deg, 0%, 100%);
   font-size: 1.6rem;
   margin-left: 8rem;
 }
@@ -144,7 +144,7 @@ nav li {
 }
 nav .chevron {
   margin-left: 1rem;
-  stroke: white;
+  stroke: hsl(0deg, 0%, 100%);
 }
 nav .chevron_desktop,
 nav .chevron_mobile {
@@ -180,16 +180,16 @@ button {
 }
 
 .cta-btn {
-  background-color: white;
+  background-color: hsl(0deg, 0%, 100%);
   padding: 1.2rem 3.5rem;
   border-radius: 9999px;
-  color: #ff525d;
+  color: hsl(356deg, 100%, 66%);
   transition: all 0.5s;
   cursor: pointer;
 }
 .cta-btn:hover {
-  background-color: #ff7a85;
-  color: white;
+  background-color: hsl(355deg, 100%, 74%);
+  color: hsl(0deg, 0%, 100%);
   transition: all 0.5s;
 }
 
@@ -200,7 +200,7 @@ button {
   gap: 0rem;
   flex-direction: column;
   font-family: "Overpass", sans-serif;
-  color: white;
+  color: hsl(0deg, 0%, 100%);
   z-index: 10;
   height: 80%;
 }
@@ -224,16 +224,16 @@ button {
   font-weight: 700;
 }
 .hero-content .options-btn {
-  border: 2px solid white;
+  border: 2px solid hsl(0deg, 0%, 100%);
   padding: 1.2rem 3.5rem;
   border-radius: 9999px;
-  color: white;
+  color: hsl(0deg, 0%, 100%);
   transition: all 0.5s;
   cursor: pointer;
 }
 .hero-content .options-btn:hover {
-  background-color: white;
-  color: #ff7a85;
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(355deg, 100%, 74%);
   transition: all 0.5s;
 }
 
@@ -245,7 +245,7 @@ button {
   z-index: 10000;
   padding: 3rem 10% 3rem;
   box-shadow: 0 0.4rem 5rem rgba(0, 0, 0, 0.3);
-  background: linear-gradient(to left, #ff3d54 10%, #ff8f70);
+  background: linear-gradient(to left, hsl(353deg, 100%, 62%) 10%, hsl(13deg, 100%, 72%));
 }
 
 .flex {
@@ -257,7 +257,7 @@ button {
 .design {
   padding-top: 8rem;
   font-family: "Overpass", sans-serif;
-  color: #4b5862;
+  color: hsl(207deg, 13%, 34%);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -297,7 +297,7 @@ button {
 }
 
 .infrastructure {
-  background: linear-gradient(to right, #2c2d3f 10%, #3f4164);
+  background: linear-gradient(to right, hsl(237deg, 17%, 21%) 10%, hsl(237deg, 23%, 32%));
   height: 30rem;
   border-radius: 0 80px 0 80px;
   position: relative;
@@ -338,7 +338,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  color: white;
+  color: hsl(0deg, 0%, 100%);
   font-family: "Overpass", sans-serif;
 }
 .infrastructure_text h3 {
@@ -354,7 +354,7 @@ button {
 .features {
   padding-top: 8rem;
   font-family: "Overpass", sans-serif;
-  color: #4b5862;
+  color: hsl(207deg, 13%, 34%);
   overflow: hidden;
 }
 
@@ -368,7 +368,7 @@ button {
 }
 
 footer {
-  background-color: #25252d;
+  background-color: hsl(240deg, 10%, 16%);
   font-family: "Ubuntu", sans-serif;
   margin-top: 5rem;
   border-radius: 0 80px 0 0;
@@ -383,7 +383,7 @@ footer {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 20%;
-  color: #c8c8cb;
+  color: hsl(240deg, 2%, 79%);
   padding-top: 4rem;
   margin-bottom: 4rem;
 }
@@ -393,12 +393,31 @@ footer {
 .flex-footer .title-list {
   font-weight: 700;
   margin-bottom: 4rem;
-  color: white;
+  color: hsl(0deg, 0%, 100%);
 }
 .flex-footer li {
   font-size: 1.4rem;
   margin-bottom: 1.4rem;
   font-weight: 400;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+}
+.flex-footer li:after {
+  content: "";
+  position: absolute;
+  bottom: -0.3rem;
+  left: 0;
+  background-color: hsl(0deg, 0%, 100%);
+  width: 100%;
+  height: 1px;
+  transition: all 0.5s;
+  opacity: 0;
+}
+.flex-footer li:hover::after {
+  opacity: 1;
 }
 
 @media screen and (max-width: 768px) {
@@ -436,7 +455,7 @@ footer {
 .bar2,
 .bar3 {
     height: 2px;
-    background-color: white;
+    background-color: hsl(0deg, 0%, 100%);
     width: 50px;
     margin: 10px 0 10px 0;
     transition: 0.5s;
@@ -479,8 +498,8 @@ footer {
     top: 0;
     right: 0;
     transform: translateX(100vw);
-    background-color: white;
-    color: #25252d;
+    background-color: hsl(0deg, 0%, 100%);
+    color: hsl(240deg, 10%, 16%);
     border-radius: 5px;
     width: 90vw;
     transition: all 0.8s;
@@ -495,7 +514,7 @@ footer {
     width: 100%;
     height: 1px;
     position: absolute;
-    background-color: #c8c8cb;
+    background-color: hsl(240deg, 2%, 79%);
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -506,8 +525,8 @@ footer {
     gap: 3rem;
   }
   nav .cta-btn {
-    background: linear-gradient(to left, #ff3d54 10%, #ff8f70);
-    color: white;
+    background: linear-gradient(to left, hsl(353deg, 100%, 62%) 10%, hsl(13deg, 100%, 72%));
+    color: hsl(0deg, 0%, 100%);
     padding: 1.5rem 4.5rem;
   }
 
@@ -545,10 +564,10 @@ footer {
   }
 
   .cta-btn {
-    background-color: white;
+    background-color: hsl(0deg, 0%, 100%);
     padding: 1.4rem 2rem;
     border-radius: 9999px;
-    color: #ff525d;
+    color: hsl(356deg, 100%, 66%);
   }
 
   .hero-content {
